@@ -22,14 +22,33 @@ To write a Python program to find the shortest possible route that visits every 
 **Step 7**: End the program.
 
 ## PYTHON PROGRAM
-
 ```
-ENTER YOUR CODE HERE
+name: KAVIYA PRIYA K
+reg.no:212223060120
+
+vertex = []
+for i in range(V):
+	if i != s:
+		vertex.append(i)
+min_path=maxsize
+next_permutation=permutations(vertex)
+for i in next_permutation:
+    
+
+
+	current_pathweight = 0
+	k=s
+	for j in i:
+	    current_pathweight+=graph[k][j]
+	    k=j
+	current_pathweight+=graph[k][s]
+	min_path=min(min_path, current_pathweight)
+return min_path
 ```
 
 ## OUTPUT
-```
-```
 
-##RESULT
+<img width="324" height="146" alt="image" src="https://github.com/user-attachments/assets/a07c032c-bd27-4c02-8ee1-9252fa3a58dd" />
 
+## RESULT
+Thus the program to find the shortest possible route using the Travelling Salesman Problem (TSP) approach has been implemented and executed successfully.
